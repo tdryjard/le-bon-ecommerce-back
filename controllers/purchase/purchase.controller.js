@@ -13,7 +13,8 @@ exports.create = (request, response) => {
         email,
         name,
         color1,
-        color2
+        color2,
+        domain
     } = request.body;
 
     // Creer un utilisateur
@@ -28,7 +29,8 @@ exports.create = (request, response) => {
         email: email || null,
         name: name || null,
         color1: color1 || null,
-        color2: color2 || null
+        color2: color2 || null,
+        domain: domain || null
     });
 
     if (!request.body) {
