@@ -13,6 +13,7 @@ const Purchase = function createPurchase(purchase) {
   this.color1 = purchase.color1;
   this.color2 = purchase.color2;
   this.domain = purchase.domain;
+  this.conditions = purchase.conditions;
 }
 
 Purchase.create = (Purchase, result) => {

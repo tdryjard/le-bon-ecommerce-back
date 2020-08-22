@@ -14,7 +14,8 @@ exports.create = (request, response) => {
         name,
         color1,
         color2,
-        domain
+        domain,
+        conditions
     } = request.body;
 
     // Creer un utilisateur
@@ -30,7 +31,8 @@ exports.create = (request, response) => {
         name: name || null,
         color1: color1 || null,
         color2: color2 || null,
-        domain: domain || null
+        domain: domain || null,
+        conditions: conditions || null
     });
 
     if (!request.body) {
